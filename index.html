@@ -51,7 +51,7 @@
     margin:0;
     font-family:'Nunito',sans-serif;
     color:var(--ink);
-    background:var(--cream);
+    background:var(--pink-soft);
     -webkit-font-smoothing:antialiased;
   }
   h1,h2,h3,.logo,nav a,.btn,.tile-label{font-family:'Quicksand',sans-serif;}
@@ -66,19 +66,20 @@
     box-shadow:0 1px 0 rgba(0,0,0,.04);
   }
   .headbar{
-    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
-    max-width:1280px;margin:0 auto;padding:13px 32px;gap:24px;
+    display:flex;align-items:center;justify-content:space-between;
+    max-width:1180px;margin:0 auto;padding:16px 32px;
+    gap:24px;
   }
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--pink-deep);font-size:1.15rem;letter-spacing:.06em;flex-shrink:0;justify-self:start;}
-  .logo img{width:42px;height:42px;object-fit:contain;}
-  nav{display:flex;justify-content:center;gap:4px;flex-wrap:wrap;grid-column:2;}
+  .logo{display:flex;align-items:center;flex-shrink:0;}
+  .logo img{width:142px;height:66px;object-fit:contain;}
+  nav{display:flex;gap:6px;flex-wrap:wrap;}
   nav a{
-    color:var(--pink-deep);text-decoration:none;font-weight:700;font-size:.98rem;
-    padding:10px 14px;border-radius:999px;letter-spacing:.01em;
-    transition:background .18s ease, color .18s ease;
+    color:#fff;text-decoration:none;font-weight:600;font-size:.86rem;
+    padding:9px 13px;border-radius:999px;letter-spacing:.01em;
+    transition:background .18s ease;
     white-space:nowrap;
   }
-  nav a:hover, nav a:focus-visible{background:rgba(164,0,102,.10);}
+  nav a:hover, nav a:focus-visible{background:rgba(255,255,255,.22);}
   .nav-toggle{display:none;background:none;border:none;color:var(--pink-deep);font-size:1.6rem;cursor:pointer;padding:4px 8px;justify-self:end;}
 
   /* Hero */
@@ -101,8 +102,8 @@
   .btn-solid:hover{background:#8f0059;}
 
   /* Sections */
-  section{padding:88px 0;}
-  .bg-pink{background:var(--pink-bg);}
+  section{padding:88px 0;background:var(--pink-soft);}
+  .bg-pink{background:var(--pink-soft);}
   .section-head{text-align:center;max-width:640px;margin:0 auto 56px;}
   .section-head h2{color:var(--pink-deep);font-size:clamp(1.8rem,3.4vw,2.4rem);margin:0 0 16px;font-weight:700;}
   .section-head p{color:var(--ink-soft);font-size:1.08rem;line-height:1.6;margin:0;}
@@ -158,26 +159,26 @@
   .map-caption{text-align:center;color:var(--pink-deep);margin-top:12px;font-size:1.02rem;}
 
   /* Order section */
-  .order-section{background:#221a1e;color:#fff;padding:0;}
+  .order-section{background:var(--pink-soft);color:var(--ink);padding:0;}
   .order-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px;}
   .order-photo{height:100%;}
   .order-photo img{width:100%;height:100%;object-fit:cover;min-height:320px;}
-  .order-form-wrap{display:flex;flex-direction:column;justify-content:center;padding:64px;}
-  .order-form-wrap h2{color:var(--pink-mid);font-size:clamp(1.6rem,3vw,2.1rem);margin:0 0 18px;text-align:center;}
-  .order-form-wrap > p{text-align:center;color:#e9d3dd;line-height:1.6;margin:0 0 34px;font-size:1.02rem;}
+  .order-form-wrap{display:flex;flex-direction:column;justify-content:center;padding:64px;background:var(--pink-mid);}
+  .order-form-wrap h2{color:var(--pink-deep);font-size:clamp(1.6rem,3vw,2.1rem);margin:0 0 18px;text-align:center;}
+  .order-form-wrap > p{text-align:center;color:var(--ink-soft);line-height:1.6;margin:0 0 34px;font-size:1.02rem;}
   .field{margin-bottom:20px;}
-  .field label{display:block;font-size:.82rem;color:#c9a9b8;margin-bottom:6px;letter-spacing:.02em;}
+  .field label{display:block;font-size:.82rem;color:var(--ink-soft);margin-bottom:6px;letter-spacing:.02em;}
   .field input{
-    width:100%;background:transparent;border:none;border-bottom:1px solid #6a4f5a;
-    color:#fff;font-size:1rem;padding:8px 2px;font-family:'Nunito',sans-serif;
+    width:100%;background:transparent;border:none;border-bottom:1px solid rgba(164,0,102,.35);
+    color:var(--ink);font-size:1rem;padding:8px 2px;font-family:'Nunito',sans-serif;
   }
-  .field input:focus{outline:none;border-bottom-color:var(--pink-mid);}
+  .field input:focus{outline:none;border-bottom-color:var(--pink-deep);}
   .order-form-wrap .btn-solid{width:100%;text-align:center;border-radius:2px;margin-top:8px;}
   .form-note{font-size:.85rem;color:#c9a9b8;margin-top:14px;text-align:center;}
 
   /* Principles */
   .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .principle{background:rgba(255,255,255,.68);border:1px solid rgba(164,0,102,.12);padding:30px 28px 32px;min-height:220px;}
+  .principle{background:var(--pink-soft);border:1px solid rgba(164,0,102,.20);padding:30px 28px 32px;min-height:220px;}
   .principle-num{display:flex;align-items:center;gap:12px;color:var(--pink-deep);font-family:'Quicksand',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.14em;margin-bottom:28px;}
   .principle-num::after{content:"";height:1px;flex:1;background:var(--line);}
   .principle h3{font-size:1.15rem;margin:0 0 10px;color:var(--ink);}
@@ -186,7 +187,7 @@
 
   /* Story editorial layout */
   .story-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:46px 0 20px;}
-  .story-card{padding:34px 34px 38px;background:var(--pink-bg);border-top:2px solid var(--pink-deep);}
+  .story-card{padding:34px 34px 38px;background:var(--pink-soft);border:1px solid rgba(164,0,102,.18);border-top:2px solid var(--pink-deep);}
   .story-card .story-label{font-family:'Quicksand',sans-serif;color:var(--pink-deep);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;}
   .story-card h3{font-size:1.5rem;margin:0 0 16px;color:var(--ink);}
   .story-card p{line-height:1.75;font-size:1.02rem;margin:0;color:var(--ink-soft);}
@@ -204,8 +205,8 @@
   .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   .examples img{border-radius:var(--radius);aspect-ratio:1/1;object-fit:cover;width:100%;}
 
-  footer{background:#221a1e;color:#c9a9b8;text-align:center;padding:38px 24px;font-size:.9rem;}
-  footer a{color:var(--pink-mid);text-decoration:none;}
+  footer{background:var(--pink-soft);color:var(--ink-soft);border-top:1px solid rgba(164,0,102,.15);text-align:center;padding:38px 24px;font-size:.9rem;}
+  footer a{color:var(--pink-deep);text-decoration:none;}
 
   @media (max-width:920px){
     .tiles{grid-template-columns:repeat(2,1fr);}
@@ -233,8 +234,7 @@
 <header>
   <div class="headbar">
     <a href="#top" class="logo">
-      <img src="images/logo-mark.png" alt="Логотип Искупление">
-      ИСКУПЛЕНИЕ
+      <img src="images/logo.png" alt="Логотип Искупление">
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Меню">&#9776;</button>
     <nav id="mainNav">
@@ -249,7 +249,7 @@
 </header>
 
 <div id="top" class="hero">
-  <img class="hero-collage" src="https://static.tildacdn.com/tild6363-3032-4565-b761-346265613062/MyCollages.jpg" alt="Коллаж украшений бренда Искупление">
+  <img class="hero-collage" src="https://static.tildacdn.com/tild3832-3462-4635-a233-333537303932/MyCollages.jpg" alt="Коллаж украшений бренда Искупление">
   <div class="hero-copy">
     <h1>ИСКУПЛЕНИЕ</h1>
     <p>— магазин ювелирных украшений собственного производства в форме цветов</p>
@@ -279,22 +279,22 @@
     </div>
     <div class="products">
       <div class="card">
-        <div class="card-img"><img src="images/new_amelia.jpg" alt="Ожерелье Амелия"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3166-3334-4438-a439-366264363063/IMG_5566.jpeg" alt="Ожерелье Амелия"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Амелия</h3><p class="price">12 000 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/new_freya.jpg" alt="Ожерелье Фрея"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3035-6231-4061-b637-343733373134/IMG_5569.jpeg" alt="Ожерелье Фрея"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Фрея</h3><p class="price">11 000 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/new_mirel.jpg" alt="Ожерелье Мирель"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild6563-3734-4936-a263-386437643834/IMG_5567.jpeg" alt="Ожерелье Мирель"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Мирель</h3><p class="price">11 500 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/new_selin.jpg" alt="Ожерелье Селин"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3363-3431-4566-b732-666634383435/IMG_5568.jpeg" alt="Ожерелье Селин"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Селин</h3><p class="price">10 500 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
@@ -310,32 +310,32 @@
     </div>
     <div class="products cols-3">
       <div class="card">
-        <div class="card-img"><img src="images/neck_selesta.jpg" alt="Ожерелье Селеста"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3138-3463-4063-a630-616266656433/IMG_5585.jpeg" alt="Ожерелье Селеста"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Селеста</h3><p class="price">12 800 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/neck_lucina.jpg" alt="Ожерелье Люцина"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild6638-3633-4165-b766-626139396637/IMG_5586.jpeg" alt="Ожерелье Люцина"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Люцина</h3><p class="price">12 500 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/neck_avrora.jpg" alt="Ожерелье Аврора"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3731-3733-4334-b335-633461643163/IMG_5587.jpeg" alt="Ожерелье Аврора"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Аврора</h3><p class="price">13 000 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/neck_melissa.jpg" alt="Ожерелье Мелисса"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3038-6532-4135-a466-323032356532/IMG_5589.jpeg" alt="Ожерелье Мелисса"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Мелисса</h3><p class="price">11 900 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/neck_felicia.jpg" alt="Ожерелье Фелиция"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3265-3232-4665-b031-666239363262/IMG_5590.jpeg" alt="Ожерелье Фелиция"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Фелиция</h3><p class="price">12 900 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
       <div class="card">
-        <div class="card-img"><img src="images/neck_silvia.jpg" alt="Ожерелье Сильвия"><button class="fav" aria-label="В избранное">&#9825;</button></div>
+        <div class="card-img"><img src="https://static.tildacdn.com/tild3932-3965-4664-a130-383763326430/IMG_5591.jpeg" alt="Ожерелье Сильвия"><button class="fav" aria-label="В избранное">&#9825;</button></div>
         <h3>Сильвия</h3><p class="price">11 400 р.</p>
         <button class="add-btn">Добавить в корзину</button>
       </div>
@@ -376,7 +376,7 @@
 
 <div class="order-section" id="order">
   <div class="order-grid">
-    <div class="order-photo"><img src="images/order_photo.jpg" alt="Витрина украшений Искупление"></div>
+    <div class="order-photo"><img src="https://static.tildacdn.com/tild6461-3737-4363-b037-313061386131/IMG_5564.jpeg" alt="Витрина украшений Искупление"></div>
     <div class="order-form-wrap">
       <h2>Не нашли подходящее украшение?</h2>
       <p>Оставьте заявку на изготовление по личным предпочтениям!</p>
@@ -433,7 +433,7 @@
         <p style="line-height:1.7;font-size:1.05rem;">В отличие от стандартных ювелирных брендов, «Искупление» создаёт флористические украшения в единственном экземпляре.</p>
         <p style="line-height:1.7;font-size:1.05rem;">Для людей, которые ценят индивидуальность и ищут эмоциональный, персональный подарок — мы предлагаем не массовую вещь, а художественный объект.</p>
       </div>
-      <img src="images/long_example.jpg" alt="Индивидуальное украшение Искупление">
+      <img src="https://static.tildacdn.com/tild6637-3666-4164-b063-623937313463/noroot.png" alt="Индивидуальное украшение Искупление">
     </div>
   </div>
 </section>
@@ -477,12 +477,12 @@
   <div class="wrap">
     <div class="section-head"><h2>Примеры индивидуальных заказов</h2></div>
     <div class="examples">
-      <img src="images/ex1.jpg" alt="Индивидуальный заказ 1">
-      <img src="images/ex2.jpg" alt="Индивидуальный заказ 2">
-      <img src="images/ex3.jpg" alt="Индивидуальный заказ 3">
-      <img src="images/ex4.jpg" alt="Индивидуальный заказ 4">
-      <img src="images/ex5.jpg" alt="Индивидуальный заказ 5">
-      <img src="images/ex6.jpg" alt="Индивидуальный заказ 6">
+      <img src="https://static.tildacdn.com/tild3938-3335-4164-a432-346437616161/image.png" alt="Индивидуальный заказ 1">
+      <img src="https://static.tildacdn.com/tild6438-3936-4761-a635-346637386139/image.png" alt="Индивидуальный заказ 2">
+      <img src="https://static.tildacdn.com/tild6634-6337-4539-a464-666632626634/image.png" alt="Индивидуальный заказ 3">
+      <img src="https://static.tildacdn.com/tild3636-6431-4135-b666-633932356361/image.png" alt="Индивидуальный заказ 4">
+      <img src="https://static.tildacdn.com/tild3562-6534-4061-b836-396137653639/image.png" alt="Индивидуальный заказ 5">
+      <img src="https://static.tildacdn.com/tild6338-3565-4539-b633-613534333462/image.png" alt="Индивидуальный заказ 6">
     </div>
     <div class="cat-more"><a href="#order" class="btn btn-solid">Оставить заявку на свой заказ</a></div>
   </div>
