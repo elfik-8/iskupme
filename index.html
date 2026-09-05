@@ -79,7 +79,7 @@
     transition:background .18s ease;
     white-space:nowrap;
   }
-  nav a:hover, nav a:focus-visible{background:rgba(255,255,255,.22);}
+  nav a:hover, nav a:focus-visible{background:var(--pink-deep);color:#fff;}
   .nav-toggle{display:none;background:none;border:none;color:var(--pink-deep);font-size:1.6rem;cursor:pointer;padding:4px 8px;justify-self:end;}
 
   /* Hero */
@@ -102,9 +102,9 @@
   .btn-solid:hover{background:#8f0059;}
 
   /* Sections */
-  section{padding:88px 0;background:var(--pink-soft);}
+  section{padding:54px 0;background:var(--pink-soft);}
   .bg-pink{background:var(--pink-soft);}
-  .section-head{text-align:center;max-width:640px;margin:0 auto 56px;}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 34px;}
   .section-head h2{color:var(--pink-deep);font-size:clamp(1.8rem,3.4vw,2.4rem);margin:0 0 16px;font-weight:700;}
   .section-head p{color:var(--ink-soft);font-size:1.08rem;line-height:1.6;margin:0;}
 
@@ -139,7 +139,7 @@
   .add-btn:hover{background:var(--pink-deep);}
   .add-btn.added{background:#7fb88a;}
 
-  .cat-more{text-align:center;margin-top:46px;}
+  .cat-more{text-align:center;margin-top:28px;}
 
   /* About split */
   .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
@@ -186,7 +186,7 @@
 
 
   /* Story editorial layout */
-  .story-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:46px 0 20px;}
+  .story-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0 20px;}
   .story-card{padding:34px 34px 38px;background:var(--pink-soft);border:1px solid rgba(164,0,102,.18);border-top:2px solid var(--pink-deep);}
   .story-card .story-label{font-family:'Quicksand',sans-serif;color:var(--pink-deep);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;}
   .story-card h3{font-size:1.5rem;margin:0 0 16px;color:var(--ink);}
@@ -239,7 +239,7 @@
     <button class="nav-toggle" id="navToggle" aria-label="Меню">&#9776;</button>
     <nav id="mainNav">
       <a href="#top">Главная</a>
-      <a href="#catalog">Каталог изделий</a>
+      <a href="#catalog" onclick="ym(112294312, 'reachGoal', 'catalog_click');">Каталог изделий</a>
       <a href="#new">Новинки</a>
       <a href="#order">Индивидуальный заказ</a>
       <a href="#contacts">Контакты</a>
@@ -253,7 +253,7 @@
   <div class="hero-copy">
     <h1>ИСКУПЛЕНИЕ</h1>
     <p>— магазин ювелирных украшений собственного производства в форме цветов</p>
-    <a href="#catalog" class="btn">Перейти в каталог</a>
+    <a href="#catalog" class="btn" onclick="ym(112294312, 'reachGoal', 'catalog_click');">Перейти в каталог</a>
   </div>
 </div>
 
@@ -430,8 +430,8 @@
 
     <div class="split" style="margin-top:56px;">
       <div>
-        <p style="line-height:1.7;font-size:1.05rem;">В отличие от стандартных ювелирных брендов, «Искупление» создаёт флористические украшения в единственном экземпляре.</p>
-        <p style="line-height:1.7;font-size:1.05rem;">Для людей, которые ценят индивидуальность и ищут эмоциональный, персональный подарок — мы предлагаем не массовую вещь, а художественный объект.</p>
+        <p style="line-height:1.7;font-size:1.25rem;">В отличие от стандартных ювелирных брендов, «Искупление» создаёт флористические украшения в единственном экземпляре.</p>
+        <p style="line-height:1.7;font-size:1.25rem;">Для людей, которые ценят индивидуальность и ищут эмоциональный, персональный подарок — мы предлагаем не массовую вещь, а художественный объект.</p>
       </div>
       <img src="https://static.tildacdn.com/tild6637-3666-4164-b063-623937313463/noroot.png" alt="Индивидуальное украшение Искупление">
     </div>
